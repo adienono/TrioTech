@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type= "text/css" href= "tech.css"?>
+<Computers>
+<Laptop>
+    <name>Lenovo Yoga 15.6"</name>
+    <price>€590</price>
+    <description>
+   Reliable and portable very easy to carry and use on the go!
+   </description>
+    <RAM>8GB</RAM>
+  <Storage> 1 TB </Storage>
+<Laptop>
+<Laptop>
+    <name>Lenovo 2 15.6"</name>
+    <price>€795</price>
+    <description>
+    Mini office yet very versatile
+    </description>
+  <RAM>8GB</RAM>
+  <Storage> 1 TB</Storage>
+</Laptop>
+<Laptop>
+    <name>Lenovo 3 19"</name>
+    <price>€895</price>
+    <description>
+    Gaming in style
+    </description>
+  <RAM>8GB</RAM>
+  <Storage>1 TB</Storage>
+</Laptop>
+<Laptop>
+    <name>Lenovo 4 19"</name>
+    <price>€450</price>
+    <description>
+    Makes surfing fun
+    </description>
+  <RAM>8GB</RAM>
+  <Storage>1 TB</Storage>
+</Laptop>
+<Laptop>
+    <name>Lenovo 5 15"/name>
+    <price>€695</price>
+    <description>
+    An office in one gadget
+    </description>
+    <RAM>8GB</RAM>
+      <Storage>1 TB</Storage>
+</Laptop>
+  
+<Laptop>
+    <name>PHP 1 15.6"</name>
+    <price>€900</price>
+    <description>
+   Reliable and portable very easy to carry and use on the go!
+   </description>
+    <RAM>8GB</RAM>
+  <Storage>1 TB</Storage>
+<Laptop>
+<Laptop>
+    <name>PHP 2 15"</name>
+    <price>€700</price>
+    <description>
+    In with the new and out with the old
+    </description>
+  <RAM>8GB</RAM>
+  <Storage>1 TB</Storage>
+</Laptop>
+<Laptop>
+    <name>PHP 3 15"</name>
+    <price>€895</price>
+    <description>
+    Portable entertainment 
+    </description>
+  <RAM>8GB</RAM>
+  <Storage>1 TB</Storage>
+</Laptop>
+<Laptop>
+    <name>PHP 4 15"</name>
+    <price>€500</price>
+    <description>
+    Make surfing struggles history with this 
+    </description>
+  <RAM>8GB</RAM>
+  <Storage>1 TB</Storage>
+</Laptop>
+<Laptop>
+    <name>PHP 5 19"</name>
+    <price>€600</price>
+    <description>
+    Efficiency on your table
+    </description>
+    <RAM>8GB</RAM>
+  <Storage>1 TB</Storage>
+</Laptop>
+</Computers> 
+  
+ 

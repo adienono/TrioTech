@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title> Ajax </title>
+    <script type="text/javascript">
+        var XMLHttpRequestObject = false;
+
+        if (window.XMLHttpRequest) {
+            XMLHttpRequestObject = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            XMLHttpRequestObject =
+              new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        function getData(datasource, divID) {
+            if (XMLHttpRequestObject) {
+                var obj = document.getElementById(divID);
+                XMLHttpRequestObject.open("GET", datasource, true);
+                XMLHttpRequestObject.onreadystatechange = function () {
+                    if (XMLHttpRequestObject.readyState == 4 
+                     && XMLHttpRequestObject.status == 200) {
+                      var body = document.getElementsByTagName('body');
+                      
+                      // remove if exists
+                      if (document.getElementById(divID)){
+                        body[0].removeChild(document.getElementById(divID));
+                      }
+                      var ajaxDesc = document.createElement('div');
+                      ajaxDesc.id = divID;
+                      ajaxDesc.innerHTML = XMLHttpRequestObject.responseText;
+                      body[0].appendChild (ajaxDesc);
+                      
+                        obj.innerHTML = 
+                        XMLHttpRequestObject.responseText;
+                    }
+                }
+                XMLHttpRequestObject.send(null);
+            }
+        }
+    </script>
+  </head>
+<body>
+    <h1> Get Data with Ajax </h1>
+
+    <form>
+      
+       <input type="button" value="Display Message" onclick = "getData('testData.txt', 'targetDiv')">
+      </form>
+      <p>
+          <table>
+              <tr>
+                  <td><img src="AjaxAmsterdam.jpg" onmouseover="getData('AjaxAmsterdam.txt','ajaxDesc')"/></td>
+                  <td><img src="AjaxBleach.jpg" onmouseover="getData('AjaxBleach.txt','ajaxDesc')"/></td>
+                  <td><img src="AjaxGreek.jpg" onmouseover="getData('AjaxGreek.txt','ajaxDesc')"/></td>
+                  <td><img src="AjaxSchematic.jpg" onmouseover="getData('AjaxSchematic.txt','ajaxDesc')"/></td>
+              </tr>
+          </table>
+          <div id="ajaxDesc"> </div>
+</p>
+
+      
+    
+    <div id="targetDiv">
+      <p> Here's the data </p>
+    </div>
+  </body>
+</html>
